@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Regístrate en nuestro sistema educativo.">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .register-container h1 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #004080;
+        }
+
+        .register-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .register-container input,
+        .register-container select {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .register-container button {
+            padding: 15px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .register-container button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h1>Crear Cuenta</h1>
+        <form action="#" method="post">
+            <input type="text" placeholder="Nombre Completo" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="text" placeholder="Nombre de Usuario" required>
+            <input type="password" placeholder="Contraseña" required>
+            <input type="password" placeholder="Confirmar Contraseña" required>
+            <input type="tel" placeholder="Número de Teléfono" required>
+            <select required>
+                <option value="" disabled selected>Estado Civil</option>
+                <option value="soltero">Soltero/a</option>
+                <option value="casado">Casado/a</option>
+                <option value="divorciado">Divorciado/a</option>
+                <option value="viudo">Viudo/a</option>
+            </select>
+            <select required>
+                <option value="" disabled selected>Estado Laboral</option>
+                <option value="empleado">Empleado/a</option>
+                <option value="desempleado">Desempleado/a</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="jubilado">Jubilado/a</option>
+            </select>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>

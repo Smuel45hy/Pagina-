@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora los programas educativos que ofrecemos, desde sexto grado hasta undécimo grado.">
+    <title>Programas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .programs {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #004080;
+            color: white;
+        }
+
+        .programs h1 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .programs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .program-item {
+            background-color: #0066cc;
+            color: white;
+            width: 300px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            cursor: pointer; /* Cambia el cursor al pasar sobre los cuadros */
+        }
+
+        .program-item:hover {
+            transform: perspective(1000px) rotateX(10deg) rotateY(10deg) rotateZ(5deg);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .program-item h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .program-item p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="programs" class="programs">
+        <h1>Nuestros Programas</h1>
+        <div class="programs-container">
+            <div class="program-item" onclick="window.location.href='login.html';">
+                <h2>Sexto Grado</h2>
+                <p>En Sexto Grado, los estudiantes se adentran en materias más complejas, desarrollando habilidades en ciencias, matemáticas y lenguaje. Además, se fomenta la responsabilidad y la autonomía.</p>
+            </div>
+            <div class="program-item" onclick="window.location.href='login.html';">
+                <h2>Séptimo Grado</h2>
+                <p>En Séptimo Grado, el enfoque está en la consolidación de conocimientos previos y la introducción a nuevas áreas como la física y la historia universal. El desarrollo de pensamiento crítico es clave.</p>
+            </div>
+            <div class="program-item" onclick="window.location.href='login.html';">
+                <h2>Octavo Grado</h2>
+                <p>En Octavo Grado, los estudiantes comienzan a profundizar en ciencias naturales, matemáticas avanzadas y literatura. Se enfatiza en la investigación y la experimentación.</p>
+            </div>
+            <div class="program-item" onclick="window.location.href='login.html';">
+                <h2>Noveno Grado</h2>
+                <p>En Noveno Grado, los estudiantes se preparan para los desafíos de la preparatoria. Se introducen conceptos más abstractos en matemáticas y ciencias, y se promueve la participación en proyectos interdisciplinarios.</p>
+            </div>
+            <div class="program-item" onclick="window.location.href='login.html';">
+                <h2>Décimo Grado</h2>
+                <p>En Décimo Grado, se enfocan en la orientación vocacional, ayudando a los estudiantes a identificar sus intereses y habilidades. Además, se imparten cursos preuniversitarios.</p>
+            </div>
+            <div class="program-item" onclick="window.location.href='login.html';">
+                <h2>Undécimo Grado</h2>
+                <p>En Undécimo Grado, los estudiantes culminan su formación secundaria con un enfoque en la preparación para exámenes de ingreso a la universidad y proyectos de investigación final.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Nombre de la Empresa Educativa]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
